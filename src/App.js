@@ -6,6 +6,7 @@ import "./App.css";
 import { Movielist } from "./components/Movielist";
 import { Movielistheading } from "./components/Movielistheading";
 import { Searchbox } from "./components/Searchbox";
+import { AddFavourites } from "./components/AddFavourites";
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -30,7 +31,7 @@ function App() {
       </div>
 
       <div className="row ">
-        <Movielist movies={movies} />
+        <Movielist movies={movies} favouriteComponent={AddFavourites} />
       </div>
     </div>
   );
