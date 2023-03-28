@@ -21,6 +21,7 @@ body {
   opacity: 1;
 }
 .overlay {
+  as
   position: absolute;
   background: rgba(0, 0, 0, 0.8);
   width: 100%;
